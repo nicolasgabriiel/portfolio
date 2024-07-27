@@ -1,7 +1,10 @@
+import Header from '../components/Header'
+
 function Home() {
   return (
     <body>
-      <h1>Home</h1>
+      <Header></Header>
+      <div className="container"></div>
     </body>
   )
 }
