@@ -6,7 +6,6 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colors.black};
   h1 {
     font-size: 32px;
     font-weight: normal;

@@ -21,9 +21,12 @@ export const GlobalCss = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     font-family: "Manrope", sans-serif;
+    body{
+      background-color: ${colors.black};
+    }
   }
   .container {
-    max-width: 1752px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     @media (max-width: ${breakpoints.desktop}) {
