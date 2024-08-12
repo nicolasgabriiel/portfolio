@@ -14,14 +14,15 @@ export const Header = styled.header`
     font-family: 'Bebas Neue';
   }
 `
-export const List = styled.ul`
+export const List = styled.nav`
   display: flex;
 `
-export const ItemList = styled.li`
+export const ItemList = styled.a`
   display: flex;
   margin: 0 0 0 32px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   color: ${colors.grey};
   font-family: 'Inter';
   transition: 0.1s;

@@ -12,15 +12,15 @@ function Hero() {
           <br /> Nicolas Gabriel
         </S.bigTitle>
         <S.text>
-          Eu sou um desenvolvedor FullStack apaixonado em construir sites e
-          sistemas web.
+          Sou um desenvolvedor Full Stack focado em criar sites e sistemas web
+          eficientes e funcionais.
         </S.text>
         <div className="containerButtons">
           <S.contactButton
             href="https://api.whatsapp.com/send/?phone=%2B5551992279251&text&type=phone_number&app_absent=0"
             target="_blank"
           >
-            <p>Contact me </p>
+            <p>meu contato</p>
             <img src={circle} alt="circle" />
           </S.contactButton>
 

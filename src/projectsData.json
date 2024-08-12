@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Ordering System",
+    "body": "Este projeto é um back-end robusto integrado a um banco de dados relacional PostgreSQL, projetado para gerenciar usuários, pedidos e produtos. A arquitetura do sistema é fundamentada em princípios de orientação a objetos, aproveitando conceitos como encapsulamento, herança e polimorfismo para garantir um design modular e escalável. A API expõe uma série de endpoints RESTful que permitem operações CRUD (Create, Read, Update, Delete) eficientes, possibilitando a integração com outros sistemas. Funcionalidades incluem a criação e gestão de usuários, processamento de pedidos, e administração de produtos. A implementação visa assegurar alta performance e integridade dos dados, enquanto proporciona uma interface intuitiva para desenvolvedores que precisam consumir esses serviços.",
+    "img": "https://uploaddeimagens.com.br/images/004/825/347/original/tes2.png?1723479990",
+    "year": "2024",
+    "role": "Back End",
+    "demoLink": "https://github.com/nicolasgabriiel/ordering-system",
+    "githubLink": "https://github.com/nicolasgabriiel/ordering-system",
+    "techs": "Java - Spring - PostgreSQL - H2 - Tomcat - Maven",
+    "hasDemo": false
+  },
+  {
+    "id": 2,
+    "title": "Posting System",
+    "body": "Este projeto é um back-end desenvolvido sobre MongoDB, um banco de dados não relacional que oferece flexibilidade e escalabilidade para a gestão de usuários, posts e comentários. Utilizando a modelagem de documentos do MongoDB, o sistema é capaz de armazenar e consultar dados de forma eficiente e adaptável. A API expõe uma série de endpoints RESTful que suportam operações de inserção, atualização e remoção de usuários, posts e comentários. Entre os recursos avançados da API, destacam-se consultas dinâmicas e filtragem robusta, permitindo a recuperação de dados de acordo com critérios específicos.",
+    "img": "https://uploaddeimagens.com.br/images/004/825/346/original/testmongo_%281%29.png?1723479958",
+    "year": "2024",
+    "role": "Back End",
+    "demoLink": "https://github.com/nicolasgabriiel/posting-system",
+    "githubLink": "https://github.com/nicolasgabriiel/posting-system",
+    "techs": "Java - Spring - MongoDB - Tomcat - Maven",
+    "hasDemo": false
+  },
+  {
+    "id": 3,
+    "title": "Efood",
+    "body": "O projeto envolve o desenvolvimento de uma página de delivery que agrega diversos restaurantes e uma ampla variedade de opções de comidas. A página é equipada com menus detalhados com descrições e imagens dos pratos, e um carrinho de compras intuitivo. O design é responsivo, garantindo uma experiência de usuário otimizada tanto em dispositivos móveis quanto em desktops.",
+    "img": "https://uploaddeimagens.com.br/images/004/825/301/original/efood.png?1723477241",
+    "year": "2024",
+    "role": "Front End",
+    "demoLink": "https://efood-tawny.vercel.app",
+    "githubLink": "https://github.com/nicolasgabriiel/Efood",
+    "techs": "React - Typescript - API - Redux - SyledComponents",
+    "hasDemo": true
+  },
+  {
+    "id": 4,
+    "title": "Rei Leão",
+    "body": "O projeto consiste na criação de uma réplica detalhada do site original do filme 'O Rei Leão', disponível na plataforma Disney+. O objetivo é capturar fielmente a aparência, a funcionalidade e a experiência do usuário presentes no site oficial da Disney+, proporcionando uma imersão semelhante à que os usuários têm ao visitar o site original.",
+    "img": "https://uploaddeimagens.com.br/images/004/825/299/original/rei_leao.png?1723476989",
+    "year": "2024",
+    "role": "Front End",
+    "demoLink": "https://rei-leao-page.vercel.app",
+    "githubLink": "https://github.com/nicolasgabriiel/Rei-Leao-Page",
+    "techs": "HTML - CSS - SASS - JavaScript - Gulp.",
+    "hasDemo": true
+  }
+]
+

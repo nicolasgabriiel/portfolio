@@ -3,8 +3,8 @@ import { colors } from '../../styles'
 import { lighten, darken } from 'polished'
 
 export const heroContainer = styled.div`
-  min-height: 700px;
-  padding: 30px 0 80px 0;
+  min-height: 100vh;
+  padding: 0 0 200px 0;
   display: flex;
   align-items: center;
   .personalData {

@@ -6,7 +6,9 @@ export const colors = {
   lightBlack: '#222222',
   lightGreen: '#D3E97A',
   grey: '#C7C7C7',
-  lightGrey: '#D9D9D9'
+  lightGrey: '#D9D9D9',
+  lightDark: '#1A1A1A',
+  darkGrey: '#484848'
 }
 
 export const breakpoints = {
@@ -33,4 +35,7 @@ export const GlobalCss = createGlobalStyle`
       max-width: 80%;
     }
   }
+  html {
+  scroll-behavior: smooth;
+}
 `
