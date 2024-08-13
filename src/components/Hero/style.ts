@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 import { lighten, darken } from 'polished'
 
 export const heroContainer = styled.div`
@@ -14,7 +14,14 @@ export const heroContainer = styled.div`
       display: flex;
       justify-content: space-between;
       max-width: 328px;
+      @media (max-width: ${breakpoints.tablet}) {
+        max-width: 260px;
+      }
     }
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    min-height: 50vh;
+    padding: 0 0 50px 0;
   }
 `
 export const bigTitle = styled.h2`
@@ -24,11 +31,17 @@ export const bigTitle = styled.h2`
   color: ${colors.white};
   font-weight: normal;
   line-height: 100%;
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 50px;
+  }
 `
 export const text = styled.p`
   font-size: 18px;
   font-family: 'Manrope', 'sans-serif';
   color: ${colors.grey};
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 14px;
+  }
 `
 export const contactButton = styled.a`
   text-decoration: none;
@@ -54,6 +67,15 @@ export const contactButton = styled.a`
   &:hover {
     background-color: ${darken(0.1, colors.lightGreen)};
   }
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 0px 24px;
+    img {
+      display: none;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 `
 export const socialButton = styled.a`
   padding: 14px;
@@ -68,5 +90,10 @@ export const socialButton = styled.a`
   }
   &:hover {
     background-color: ${lighten(0.1, colors.lightBlack)};
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    img {
+      height: 18px;
+    }
   }
 `

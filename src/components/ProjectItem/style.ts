@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 import { darken } from 'polished'
 
 export const Container = styled.div`
@@ -24,6 +24,13 @@ export const Container = styled.div`
     width: 47%;
     padding: 5px 0 30px;
   }
+  @media (max-width: ${breakpoints.desktop}) {
+    display: block;
+    .background,
+    .informationCard {
+      width: 100%;
+    }
+  }
 `
 
 export const Title = styled.h3`
@@ -32,6 +39,11 @@ export const Title = styled.h3`
   line-height: 140%;
   font-weight: 500;
   padding-bottom: 16px;
+  @media (max-width: ${breakpoints.desktop}) {
+    padding-top: 12px;
+    font-size: 26px;
+    text-align: center;
+  }
 `
 
 export const Description = styled.p`
@@ -40,6 +52,9 @@ export const Description = styled.p`
   line-height: 150%;
   font-weight: 400;
   text-align: justify;
+  @media (max-width: ${breakpoints.desktop}) {
+    font-size: 14px;
+  }
 `
 export const SubTitle = styled.h4`
   color: ${colors.white};
@@ -49,6 +64,9 @@ export const SubTitle = styled.h4`
   text-transform: uppercase;
   padding: 32px 0 16px 0;
   border-bottom: 1px solid ${colors.darkGrey};
+  @media (max-width: ${breakpoints.desktop}) {
+    font-size: 14px;
+  }
 `
 export const InfoList = styled.ul`
   li {
@@ -58,12 +76,30 @@ export const InfoList = styled.ul`
     line-height: 160%;
     padding: 14px 0;
     border-bottom: 1px solid ${colors.darkGrey};
+    @media (max-width: ${breakpoints.desktop}) {
+      padding: 10px 0;
+      &:last-child {
+        display: block;
+        h5 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
     h5 {
       font-size: 16px;
       color: ${colors.white};
+      @media (max-width: ${breakpoints.desktop}) {
+        font-size: 14px;
+      }
     }
     p {
       color: ${colors.grey};
+      @media (max-width: ${breakpoints.desktop}) {
+        font-size: 14px;
+      }
     }
   }
 `

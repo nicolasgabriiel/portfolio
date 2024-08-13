@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const title = styled.h2`
   font-family: 'Bebas Neue', 'sans-serif';
@@ -8,4 +8,7 @@ export const title = styled.h2`
   color: ${colors.white};
   font-weight: normal;
   line-height: 110%;
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 50px;
+  }
 `

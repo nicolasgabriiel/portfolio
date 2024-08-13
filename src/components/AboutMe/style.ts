@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 import { darken } from 'polished'
 
 export const ContainerAbout = styled.div`
@@ -7,17 +7,29 @@ export const ContainerAbout = styled.div`
   justify-content: space-between;
   padding: 120px 0;
   min-height: 100vh;
+  @media (max-width: ${breakpoints.desktop}) {
+    display: block;
+  }
   .containerTitle {
     width: 30%;
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 100%;
+    }
   }
   .containerInfos {
     width: 65%;
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 100%;
+    }
     h3 {
       color: ${colors.white};
       font-size: 32px;
       font-weight: 500;
       line-height: 140%;
       padding-bottom: 16px;
+      @media (max-width: ${breakpoints.tablet}) {
+        font-size: 18px;
+      }
     }
     p {
       color: ${colors.grey};
@@ -25,6 +37,9 @@ export const ContainerAbout = styled.div`
       line-height: 150%;
       padding-bottom: 50px;
       text-align: justify;
+      @media (max-width: ${breakpoints.tablet}) {
+        font-size: 14px;
+      }
     }
     a {
       color: ${colors.lightGreen};
